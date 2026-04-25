@@ -14,7 +14,14 @@ interface PlayerTableProps {
 }
 
 export const PlayerTable: React.FC<PlayerTableProps> = ({ players, tournaments = [], tiers = [], sortBy, onPlayerClick, showTier, tierId }) => {
-  const sortedPlayers = [...players].sort((a, b) => b[sortBy] - a[sortBy]);
+  const sortedPlayers = [...players].sort((a, b) => {
+    if (sortBy === 'elo' && tierId) {
+      const eloA = a.eloScores?.[tierId] ?? 1000;
+      const eloB = b.eloScores?.[tierId] ?? 1000;
+      return eloB - eloA;
+    }
+    return b[sortBy] - a[sortBy];
+  });
 
   return (
     <div className="w-full overflow-x-auto rounded-xl border border-brand-border bg-brand-card shadow-2xl">
@@ -114,7 +121,7 @@ export const PlayerTable: React.FC<PlayerTableProps> = ({ players, tournaments =
                 <td className="px-3 sm:px-6 py-4 sm:py-8 text-right">
                   <div className="flex flex-col items-end">
                     <span className="text-xl sm:text-2xl font-black text-white tracking-tighter leading-none">
-                      {player[sortBy]}
+                      {sortBy === 'elo' && tierId ? (player.eloScores?.[tierId] ?? 1000) : player[sortBy]}
                     </span>
                     <div className="flex items-center gap-1 mt-1">
                       <span className="text-[7px] sm:text-[9px] font-bold text-brand-text-muted uppercase tracking-widest">ELO</span>

@@ -22,23 +22,20 @@ export const PlayerModal: React.FC<PlayerModalProps> = ({ player, tournaments = 
     ...(player.history || []).map(h => ({
       date: h.date,
       name: 'Match',
-      points: h.points,
-      elo: h.elo
+      points: h.points
     })),
     ...(archives || []).map(archive => {
       const historicalPlayer = archive.data.find(p => p.id === player.id);
       return {
         date: archive.date,
         name: archive.name,
-        points: historicalPlayer?.points || 0,
-        elo: historicalPlayer?.elo || 1000
+        points: historicalPlayer?.points || 0
       };
     }),
     {
       date: new Date().toISOString().split('T')[0],
       name: 'Current',
-      points: player.points,
-      elo: player.elo
+      points: player.points
     }
   ].reduce((acc: any[], curr) => {
     // Remove duplicates by date, preferring archive/current over match history
@@ -81,17 +78,19 @@ export const PlayerModal: React.FC<PlayerModalProps> = ({ player, tournaments = 
                   {player.nickname}
                   {player.badge && <span className="text-[8px] sm:text-[10px] font-bold px-2 sm:px-3 py-0.5 sm:py-1 bg-emerald-500/10 text-emerald-400 rounded border border-emerald-500/20 uppercase tracking-[0.2em]">{player.badge}</span>}
                 </h2>
-                <div className="flex gap-3 sm:gap-4 mt-2 sm:mt-3">
+                <div className="flex gap-3 sm:gap-4 mt-2 sm:mt-3 flex-wrap">
                   <div className="flex flex-col">
                     <span className="text-[7px] sm:text-[8px] font-bold text-brand-text-muted uppercase tracking-widest">Points</span>
                     <span className="text-lg sm:text-xl font-black text-white tracking-tighter italic">{player.points}</span>
                   </div>
+                  {player.eloScores && Object.entries(player.eloScores).map(([tierId, score]) => (
+                    <div key={tierId} className="flex flex-col">
+                      <span className="text-[7px] sm:text-[8px] font-bold text-brand-text-muted uppercase tracking-widest">{tierId} ELO</span>
+                      <span className="text-lg sm:text-xl font-black text-white tracking-tighter italic">{score}</span>
+                    </div>
+                  ))}
                   <div className="flex flex-col">
-                    <span className="text-[7px] sm:text-[8px] font-bold text-brand-text-muted uppercase tracking-widest">ELO</span>
-                    <span className="text-lg sm:text-xl font-black text-white tracking-tighter italic">{player.elo}</span>
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="text-[7px] sm:text-[8px] font-bold text-brand-text-muted uppercase tracking-widest">Tier</span>
+                    <span className="text-[7px] sm:text-[8px] font-bold text-brand-text-muted uppercase tracking-widest">Main Tier</span>
                     <span className={cn(
                       "text-lg sm:text-xl font-black tracking-tighter italic",
                       player.tier === 'S' ? "text-tier-s" :
@@ -151,15 +150,6 @@ export const PlayerModal: React.FC<PlayerModalProps> = ({ player, tournaments = 
                       stroke="#10b981" 
                       strokeWidth={3} 
                       dot={{ fill: '#10b981', strokeWidth: 0, r: 4 }} 
-                      activeDot={{ r: 6, strokeWidth: 0 }}
-                    />
-                    <Line 
-                      type="monotone" 
-                      dataKey="elo" 
-                      name="ELO"
-                      stroke="#3b82f6" 
-                      strokeWidth={3} 
-                      dot={{ fill: '#3b82f6', strokeWidth: 0, r: 4 }} 
                       activeDot={{ r: 6, strokeWidth: 0 }}
                     />
                   </LineChart>

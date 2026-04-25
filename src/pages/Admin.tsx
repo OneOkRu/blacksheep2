@@ -108,13 +108,13 @@ export const Admin: React.FC = () => {
   };
 
   useEffect(() => {
-    if (data && !data.tiers.find(t => t.id === 'axes')) {
+    if (data && !data.tiers.find(t => t.id === 'axe')) {
       setLocalData(prev => {
         if (!prev) return prev;
-        if (prev.tiers.find(t => t.id === 'axes')) return prev;
+        if (prev.tiers.find(t => t.id === 'axe')) return prev;
         return {
           ...prev,
-          tiers: [...prev.tiers, { id: 'axes', name: 'Axes', icon: '🪓' }]
+          tiers: [...prev.tiers, { id: 'axe', name: 'Axe PvP', icon: '🪓' }]
         };
       });
     }
@@ -263,7 +263,8 @@ const MatchesAdmin: React.FC<{
   const [p2, setP2] = useState('');
   const [p1Score, setP1Score] = useState(10);
   const [p2Score, setP2Score] = useState(3);
-  const [matchTier, setMatchTier] = useState<string>('overall');
+  const eligibleTiers = data.tiers.filter(t => t.id !== 'overall');
+  const [matchTier, setMatchTier] = useState<string>(eligibleTiers[0]?.id || '');
 
   const handleRecordMatch = () => {
     if (!p1 || !p2) return showAlert('Validation Error', 'Select both players');
@@ -277,9 +278,9 @@ const MatchesAdmin: React.FC<{
     if (!player1 || !player2) return;
 
     // Dynamic ELO Logic
-    const K = 600; 
-    const p1Elo = matchTier === 'overall' ? player1.elo : (player1.eloScores?.[matchTier] || 1000);
-    const p2Elo = matchTier === 'overall' ? player2.elo : (player2.eloScores?.[matchTier] || 1000);
+    const K = 300; 
+    const p1Elo = player1.eloScores?.[matchTier] || 1000;
+    const p2Elo = player2.eloScores?.[matchTier] || 1000;
 
     const r1 = Math.pow(10, p1Elo / 400);
     const r2 = Math.pow(10, p2Elo / 400);
@@ -287,7 +288,7 @@ const MatchesAdmin: React.FC<{
     const e2 = r2 / (r1 + r2);
 
     // Calculate total change for the series
-    // Treat the series as a single match where the "ActualScore" is the percentage of wins
+    // Performance-based Elo: use the percentage of rounds won as the actual score
     const actualScore1 = p1Score / numMatches;
     const actualScore2 = p2Score / numMatches;
 
@@ -313,29 +314,21 @@ const MatchesAdmin: React.FC<{
       if (!prev) return prev;
       const updatedPlayers = prev.players.map(p => {
         if (p.id === p1) {
-          const newElo = matchTier === 'overall' ? p.elo + change1 : p.elo;
           const newEloScores = { ...(p.eloScores || {}) };
-          if (matchTier !== 'overall') {
-            newEloScores[matchTier] = (newEloScores[matchTier] || 1000) + change1;
-          }
+          newEloScores[matchTier] = (newEloScores[matchTier] || 1000) + change1;
           return {
             ...p,
-            elo: newElo,
             eloScores: newEloScores,
-            history: [...p.history, { date: today, points: p.points, elo: newElo, position: 0 }]
+            history: [...p.history, { date: today, points: p.points, elo: p.elo, position: 0 }]
           };
         }
         if (p.id === p2) {
-          const newElo = matchTier === 'overall' ? p.elo + change2 : p.elo;
           const newEloScores = { ...(p.eloScores || {}) };
-          if (matchTier !== 'overall') {
-            newEloScores[matchTier] = (newEloScores[matchTier] || 1000) + change2;
-          }
+          newEloScores[matchTier] = (newEloScores[matchTier] || 1000) + change2;
           return {
             ...p,
-            elo: newElo,
             eloScores: newEloScores,
-            history: [...p.history, { date: today, points: p.points, elo: newElo, position: 0 }]
+            history: [...p.history, { date: today, points: p.points, elo: p.elo, position: 0 }]
           };
         }
         return p;
@@ -373,8 +366,7 @@ const MatchesAdmin: React.FC<{
           <div className="space-y-2">
             <label className="text-[10px] font-bold uppercase tracking-[0.2em] text-brand-text-muted">Tier / Category</label>
             <select className="w-full bg-brand-card border border-brand-border text-white rounded-xl p-3 focus:ring-white focus:border-white outline-none transition-all" value={matchTier} onChange={e => setMatchTier(e.target.value)}>
-              <option value="overall">Overall</option>
-              {data.tiers.filter(t => t.id !== 'overall').map(t => (
+              {eligibleTiers.map(t => (
                 <option key={t.id} value={t.id}>{t.name}</option>
               ))}
             </select>
@@ -384,7 +376,7 @@ const MatchesAdmin: React.FC<{
             <select className="w-full bg-brand-card border border-brand-border text-white rounded-xl p-3 focus:ring-white focus:border-white outline-none transition-all" value={p1} onChange={e => setP1(e.target.value)}>
               <option value="">Select...</option>
               {data.players.map(p => {
-                const elo = matchTier === 'overall' ? p.elo : (p.eloScores?.[matchTier] || 1000);
+                const elo = p.eloScores?.[matchTier] || 1000;
                 return <option key={p.id} value={p.id}>{p.nickname} ({elo})</option>;
               })}
             </select>
@@ -394,7 +386,7 @@ const MatchesAdmin: React.FC<{
             <select className="w-full bg-brand-card border border-brand-border text-white rounded-xl p-3 focus:ring-white focus:border-white outline-none transition-all" value={p2} onChange={e => setP2(e.target.value)}>
               <option value="">Select...</option>
               {data.players.map(p => {
-                const elo = matchTier === 'overall' ? p.elo : (p.eloScores?.[matchTier] || 1000);
+                const elo = p.eloScores?.[matchTier] || 1000;
                 return <option key={p.id} value={p.id}>{p.nickname} ({elo})</option>;
               })}
             </select>
@@ -595,25 +587,24 @@ const PlayersAdmin: React.FC<{
                     </td>
                     <td className="px-6 py-4">
                       <div className="flex flex-col gap-2 max-h-40 overflow-y-auto pr-2 custom-scrollbar">
-                        {data.tiers.map(t => (
-                          <div key={t.id} className="flex items-center gap-3">
-                            <span className="text-[8px] font-bold text-brand-text-muted uppercase tracking-widest w-16 truncate">{t.name}</span>
-                            <input 
-                              type="number"
-                              className="w-20 bg-brand-card border border-brand-border text-white rounded-lg p-1 text-xs focus:ring-white focus:border-white outline-none" 
-                              placeholder="ELO" 
-                              value={t.id === 'overall' ? editForm.elo || 0 : editForm.eloScores?.[t.id] || 1000} 
-                              onChange={e => {
-                                const val = parseInt(e.target.value) || 0;
-                                if (t.id === 'overall') {
-                                  setEditForm({...editForm, elo: val});
-                                } else {
+                        {data.tiers.map(t => {
+                          if (t.id === 'overall') return null; // Hide overall ELO
+                          return (
+                            <div key={t.id} className="flex items-center gap-3">
+                              <span className="text-[8px] font-bold text-brand-text-muted uppercase tracking-widest w-16 truncate">{t.name}</span>
+                              <input 
+                                type="number"
+                                className="w-20 bg-brand-card border border-brand-border text-white rounded-lg p-1 text-xs focus:ring-white focus:border-white outline-none" 
+                                placeholder="ELO" 
+                                value={editForm.eloScores?.[t.id] || 1000} 
+                                onChange={e => {
+                                  const val = parseInt(e.target.value) || 0;
                                   setEditForm({...editForm, eloScores: {...(editForm.eloScores || {}), [t.id]: val}});
-                                }
-                              }} 
-                            />
-                          </div>
-                        ))}
+                                }} 
+                              />
+                            </div>
+                          );
+                        })}
                       </div>
                     </td>
                     <td className="px-6 py-4">
@@ -662,20 +653,21 @@ const PlayersAdmin: React.FC<{
                     </td>
                     <td className="px-6 py-4 font-black italic text-lg text-white tracking-tighter">{player.points}</td>
                     <td className="px-6 py-4 font-black italic text-lg text-white tracking-tighter">{player.tournamentPoints || 0}</td>
-                    <td className="px-6 py-4">
-                      <div className="flex flex-col gap-1">
-                        {data.tiers.map(t => {
-                          const val = t.id === 'overall' ? player.elo : player.eloScores?.[t.id];
-                          if (val === undefined && t.id !== 'overall') return null;
-                          return (
-                            <div key={t.id} className="flex items-center gap-2 text-[8px] font-bold text-brand-text-muted uppercase tracking-widest">
-                              <span>{t.name}:</span>
-                              <span className="text-white">{val || 1000}</span>
-                            </div>
-                          );
-                        })}
-                      </div>
-                    </td>
+                     <td className="px-6 py-4">
+                       <div className="flex flex-col gap-1">
+                         {data.tiers.map(t => {
+                           if (t.id === 'overall') return null; // Hide overall ELO
+                           const val = player.eloScores?.[t.id];
+                           if (val === undefined) return null;
+                           return (
+                             <div key={t.id} className="flex items-center gap-2 text-[8px] font-bold text-brand-text-muted uppercase tracking-widest">
+                               <span>{t.name}:</span>
+                               <span className="text-white">{val || 1000}</span>
+                             </div>
+                           );
+                         })}
+                       </div>
+                     </td>
                     <td className="px-6 py-4">
                       <div className="flex flex-wrap gap-1">
                         {data.tiers.map(t => {

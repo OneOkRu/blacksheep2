@@ -9,8 +9,12 @@ import { cn } from '../lib/utils';
 export const Elo: React.FC = () => {
   const { data } = useData();
   const [selectedPlayer, setSelectedPlayer] = useState<Player | null>(null);
+  const eligibleTiers = data?.tiers.filter(t => t.id !== 'overall') || [];
+  const [activeTierId, setActiveTierId] = useState<string>(eligibleTiers[0]?.id || '');
 
   if (!data) return null;
+
+  const matches = (data.matches || []).filter(m => m.tierId === activeTierId);
 
   return (
     <div className="space-y-12 animate-in fade-in duration-700">
@@ -23,12 +27,30 @@ export const Elo: React.FC = () => {
         </p>
       </div>
 
+      <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
+        {eligibleTiers.map(tier => (
+          <button
+            key={tier.id}
+            onClick={() => setActiveTierId(tier.id)}
+            className={cn(
+              "px-4 sm:px-6 py-2 sm:py-3 rounded-xl text-[10px] font-bold uppercase tracking-[0.2em] transition-all border whitespace-nowrap",
+              activeTierId === tier.id 
+                ? "bg-white text-brand-bg border-white shadow-xl" 
+                : "bg-brand-card text-brand-text-muted border-brand-border hover:border-brand-text-muted/50"
+            )}
+          >
+            ELO {tier.name}
+          </button>
+        ))}
+      </div>
+
       <div className="space-y-6">
         <PlayerTable 
           players={data.players} 
           tournaments={data.tournaments}
           tiers={data.tiers}
           sortBy="elo" 
+          tierId={activeTierId}
           onPlayerClick={setSelectedPlayer} 
           showTier={false}
         />
@@ -37,10 +59,10 @@ export const Elo: React.FC = () => {
       <div className="space-y-6 pt-12 border-t border-brand-border">
         <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-brand-text-muted flex items-center gap-2">
           <Swords className="w-3 h-3" />
-          Recent Matches
+          Recent Matches - {data.tiers.find(t => t.id === activeTierId)?.name}
         </h2>
         <div className="grid gap-4 md:grid-cols-2">
-          {(data.matches || []).slice(0, 10).map(m => {
+          {matches.slice(0, 10).map(m => {
             const p1 = data.players.find(p => p.id === m.player1Id);
             const p2 = data.players.find(p => p.id === m.player2Id);
             const tierName = m.tierId ? (data.tiers.find(t => t.id === m.tierId)?.name || m.tierId) : 'Overall';
