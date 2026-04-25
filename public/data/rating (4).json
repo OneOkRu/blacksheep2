@@ -1,0 +1,1804 @@
+{
+  "settings": {
+    "siteName": "blacksheep rating",
+    "description": "Modern Minecraft PvP Tier List",
+    "tournamentCoefficients": {
+      "1": 100,
+      "2": 50,
+      "3": 25
+    },
+    "tierValues": {
+      "S": 10,
+      "A": 8,
+      "B": 6,
+      "C": 4,
+      "D": 2
+    },
+    "visibleTabs": [
+      "overall",
+      "elo",
+      "tournaments",
+      "tiers",
+      "archive"
+    ]
+  },
+  "tiers": [
+    {
+      "id": "overall",
+      "name": "Overall",
+      "icon": "🌍"
+    },
+    {
+      "id": "axe",
+      "name": "Axe PvP",
+      "icon": "🪓"
+    },
+    {
+      "id": "sword",
+      "name": "Sword PvP",
+      "icon": "🗡️"
+    }
+  ],
+  "players": [
+    {
+      "id": "b23nz3hj7",
+      "nickname": "ClubOne_",
+      "skinNickname": "ClubOne_",
+      "points": 20,
+      "tournamentPoints": 0,
+      "elo": 1317,
+      "badge": "HT4",
+      "tier": "S",
+      "tierScores": {
+        "axe": "S",
+        "sword": "S"
+      },
+      "history": [
+        {
+          "date": "2026-04-06",
+          "points": 20,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-06",
+          "points": 20,
+          "elo": 1011,
+          "position": 0
+        },
+        {
+          "date": "2026-04-06",
+          "points": 20,
+          "elo": 997,
+          "position": 0
+        },
+        {
+          "date": "2026-04-06",
+          "points": 20,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-06",
+          "points": 20,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-06",
+          "points": 20,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-06",
+          "points": 20,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 20,
+          "elo": 1317,
+          "position": 0
+        }
+      ],
+      "eloScores": {
+        "sword": 1241,
+        "axe": 1192
+      }
+    },
+    {
+      "id": "hvohxy234",
+      "nickname": "RQXSLLY",
+      "skinNickname": "Solleise",
+      "points": 18,
+      "tournamentPoints": 0,
+      "elo": 1104,
+      "badge": "",
+      "tier": "S",
+      "tierScores": {
+        "axe": "S",
+        "sword": "A"
+      },
+      "history": [
+        {
+          "date": "2026-04-06",
+          "points": 18,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-06",
+          "points": 18,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-06",
+          "points": 18,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-06",
+          "points": 18,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 18,
+          "elo": 1104,
+          "position": 0
+        }
+      ],
+      "eloScores": {
+        "sword": 945,
+        "axe": 881
+      }
+    },
+    {
+      "id": "fbjpzq3af",
+      "nickname": "hkmhk",
+      "skinNickname": "LaGoat7112",
+      "points": 14,
+      "tournamentPoints": 0,
+      "elo": 688,
+      "badge": "",
+      "tier": "A",
+      "tierScores": {
+        "axe": "A",
+        "sword": "B"
+      },
+      "history": [
+        {
+          "date": "2026-04-06",
+          "points": 14,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-06",
+          "points": 14,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-06",
+          "points": 14,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 14,
+          "elo": 688,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 14,
+          "elo": 688,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 14,
+          "elo": 688,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 14,
+          "elo": 688,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 14,
+          "elo": 688,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 14,
+          "elo": 688,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 14,
+          "elo": 688,
+          "position": 0
+        }
+      ],
+      "eloScores": {
+        "sword": 906,
+        "axe": 1
+      }
+    },
+    {
+      "id": "nl061d1bh",
+      "nickname": "Mintcl",
+      "skinNickname": "ClubOne_",
+      "points": 4,
+      "tournamentPoints": 0,
+      "elo": 0,
+      "badge": "",
+      "tier": "D",
+      "tierScores": {
+        "axe": "D",
+        "sword": "D"
+      },
+      "history": [],
+      "eloScores": {
+        "sword": 1,
+        "axe": 1
+      }
+    },
+    {
+      "id": "lozncbrq5",
+      "nickname": "xomyak",
+      "skinNickname": "xomyak",
+      "points": 4,
+      "tournamentPoints": 0,
+      "elo": 0,
+      "badge": "",
+      "tier": "D",
+      "tierScores": {
+        "axe": "D",
+        "sword": "D"
+      },
+      "history": [],
+      "eloScores": {
+        "sword": 1,
+        "axe": 1
+      }
+    },
+    {
+      "id": "4pb1y3uk4",
+      "nickname": "Nekaa_",
+      "skinNickname": "Nekaa_",
+      "points": 16,
+      "tournamentPoints": 0,
+      "elo": 891,
+      "badge": "",
+      "tier": "A",
+      "tierScores": {
+        "axe": "A",
+        "sword": "A"
+      },
+      "history": [
+        {
+          "date": "2026-04-06",
+          "points": 14,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-06",
+          "points": 14,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-06",
+          "points": 14,
+          "elo": 1000,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 16,
+          "elo": 891,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 16,
+          "elo": 891,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 16,
+          "elo": 891,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 16,
+          "elo": 891,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 16,
+          "elo": 891,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 16,
+          "elo": 891,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 16,
+          "elo": 891,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 16,
+          "elo": 891,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 16,
+          "elo": 891,
+          "position": 0
+        },
+        {
+          "date": "2026-04-25",
+          "points": 16,
+          "elo": 891,
+          "position": 0
+        }
+      ],
+      "eloScores": {
+        "sword": 908,
+        "axe": 927
+      }
+    },
+    {
+      "id": "1bqm5d1vf",
+      "nickname": "Richard_101",
+      "skinNickname": "ClubOne",
+      "points": 12,
+      "tournamentPoints": 0,
+      "elo": 0,
+      "badge": "",
+      "tier": "B",
+      "tierScores": {
+        "axe": "A",
+        "sword": "C"
+      },
+      "history": [],
+      "eloScores": {
+        "sword": 1,
+        "axe": 1
+      }
+    }
+  ],
+  "tournaments": [
+    {
+      "id": "t513exr4d",
+      "name": "Parkour  open 1",
+      "date": "2026-04-05",
+      "places": {
+        "1": [
+          "hvohxy234"
+        ],
+        "2": [
+          "4pb1y3uk4"
+        ],
+        "3": [
+          "b23nz3hj7",
+          "fbjpzq3af"
+        ]
+      },
+      "shortName": "PRKR1"
+    },
+    {
+      "id": "7oylnl78o",
+      "name": "Dropper championship 1",
+      "date": "2026-04-24",
+      "places": {
+        "1": [
+          "b23nz3hj7"
+        ],
+        "2": [
+          "4pb1y3uk4"
+        ],
+        "3": [
+          "fbjpzq3af"
+        ]
+      },
+      "shortName": "DRPPR1"
+    }
+  ],
+  "archives": [
+    {
+      "id": "b3tkpazsa",
+      "name": "Spring 2026",
+      "date": "2026-04-05",
+      "data": [
+        {
+          "id": "b23nz3hj7",
+          "nickname": "ClubOne_",
+          "skinNickname": "ClubOne_",
+          "points": 20,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "S",
+            "sword": "S"
+          },
+          "history": [
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1011,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 997,
+              "position": 0
+            }
+          ],
+          "eloScores": {
+            "sword": 1000
+          }
+        },
+        {
+          "id": "38hnp7cll",
+          "nickname": "Nekaa_",
+          "skinNickname": "Nekaa_",
+          "points": 12,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "B",
+          "tierScores": {
+            "axe": "A",
+            "sword": "C"
+          },
+          "history": [
+            {
+              "date": "2026-04-06",
+              "points": 12,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 12,
+              "elo": 987,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 12,
+              "elo": 999,
+              "position": 0
+            }
+          ],
+          "eloScores": {
+            "sword": 1000
+          }
+        },
+        {
+          "id": "hvohxy234",
+          "nickname": "RQXSLLY",
+          "skinNickname": "Solleise",
+          "points": 18,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "S",
+            "sword": "A"
+          },
+          "history": []
+        },
+        {
+          "id": "fbjpzq3af",
+          "nickname": "hkmhk",
+          "skinNickname": "LaGoat7112",
+          "points": 14,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "A",
+          "tierScores": {
+            "axe": "A",
+            "sword": "B"
+          },
+          "history": []
+        },
+        {
+          "id": "nl061d1bh",
+          "nickname": "Mintcl",
+          "skinNickname": "ClubOne_",
+          "points": 6,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "C",
+          "tierScores": {
+            "axe": "C",
+            "sword": "D"
+          },
+          "history": []
+        },
+        {
+          "id": "lozncbrq5",
+          "nickname": "xomyak",
+          "skinNickname": "xomyak",
+          "points": 4,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "D",
+          "tierScores": {
+            "axe": "D",
+            "sword": "D"
+          },
+          "history": []
+        },
+        {
+          "id": "wvssdo3br",
+          "nickname": "Richard_101",
+          "skinNickname": "clubone",
+          "points": 14,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "B",
+          "tierScores": {
+            "axe": "A",
+            "sword": "B"
+          },
+          "history": []
+        }
+      ]
+    },
+    {
+      "id": "ylqpga5zf",
+      "name": "Winter 2026",
+      "date": "2026-01-24",
+      "data": [
+        {
+          "id": "b23nz3hj7",
+          "nickname": "ClubOne_",
+          "skinNickname": "ClubOne_",
+          "points": 20,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "S",
+            "sword": "S"
+          },
+          "history": [
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1011,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 997,
+              "position": 0
+            }
+          ],
+          "eloScores": {
+            "sword": 1000
+          }
+        },
+        {
+          "id": "38hnp7cll",
+          "nickname": "Nekaa_",
+          "skinNickname": "Nekaa_",
+          "points": 12,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "B",
+          "tierScores": {
+            "axe": "A",
+            "sword": "C"
+          },
+          "history": [
+            {
+              "date": "2026-04-06",
+              "points": 12,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 12,
+              "elo": 987,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 12,
+              "elo": 999,
+              "position": 0
+            }
+          ],
+          "eloScores": {
+            "sword": 1000
+          }
+        },
+        {
+          "id": "hvohxy234",
+          "nickname": "RQXSLLY",
+          "skinNickname": "Solleise",
+          "points": 18,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "A",
+            "sword": "S"
+          },
+          "history": []
+        },
+        {
+          "id": "fbjpzq3af",
+          "nickname": "hkmhk",
+          "skinNickname": "LaGoat7112",
+          "points": 16,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "A",
+          "tierScores": {
+            "axe": "A",
+            "sword": "A"
+          },
+          "history": []
+        },
+        {
+          "id": "nl061d1bh",
+          "nickname": "Mintcl",
+          "skinNickname": "ClubOne_",
+          "points": 12,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "B",
+          "tierScores": {
+            "axe": "B",
+            "sword": "B"
+          },
+          "history": []
+        },
+        {
+          "id": "lozncbrq5",
+          "nickname": "xomyak",
+          "skinNickname": "xomyak",
+          "points": 4,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "D",
+          "tierScores": {
+            "axe": "D",
+            "sword": "D"
+          },
+          "history": []
+        },
+        {
+          "id": "wvssdo3br",
+          "nickname": "Richard_101",
+          "skinNickname": "clubone",
+          "points": 16,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "A",
+          "tierScores": {
+            "axe": "A",
+            "sword": "A"
+          },
+          "history": []
+        }
+      ]
+    },
+    {
+      "id": "w3xp7ablr",
+      "name": "Autumn 2025",
+      "date": "2025-10-06",
+      "data": [
+        {
+          "id": "b23nz3hj7",
+          "nickname": "ClubOne_",
+          "skinNickname": "ClubOne_",
+          "points": 20,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "S",
+            "sword": "S"
+          },
+          "history": [
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1011,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 997,
+              "position": 0
+            }
+          ],
+          "eloScores": {
+            "sword": 1000
+          }
+        },
+        {
+          "id": "hvohxy234",
+          "nickname": "RQXSLLY",
+          "skinNickname": "Solleise",
+          "points": 18,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "A",
+            "sword": "S"
+          },
+          "history": []
+        },
+        {
+          "id": "fbjpzq3af",
+          "nickname": "hkmhk",
+          "skinNickname": "LaGoat7112",
+          "points": 16,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "A",
+          "tierScores": {
+            "axe": "A",
+            "sword": "A"
+          },
+          "history": []
+        },
+        {
+          "id": "nl061d1bh",
+          "nickname": "Mintcl",
+          "skinNickname": "ClubOne_",
+          "points": 12,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "B",
+          "tierScores": {
+            "axe": "B",
+            "sword": "B"
+          },
+          "history": []
+        },
+        {
+          "id": "lozncbrq5",
+          "nickname": "xomyak",
+          "skinNickname": "xomyak",
+          "points": 4,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "D",
+          "tierScores": {
+            "axe": "D",
+            "sword": "D"
+          },
+          "history": []
+        },
+        {
+          "id": "wvssdo3br",
+          "nickname": "Richard_101",
+          "skinNickname": "clubone",
+          "points": 16,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "A",
+          "tierScores": {
+            "axe": "A",
+            "sword": "A"
+          },
+          "history": []
+        }
+      ]
+    },
+    {
+      "id": "53zszvs8r",
+      "name": "Summer 2025",
+      "date": "2025-06-06",
+      "data": [
+        {
+          "id": "b23nz3hj7",
+          "nickname": "ClubOne_",
+          "skinNickname": "ClubOne_",
+          "points": 20,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "S",
+            "sword": "S"
+          },
+          "history": [
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1011,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 997,
+              "position": 0
+            }
+          ],
+          "eloScores": {
+            "sword": 1000
+          }
+        },
+        {
+          "id": "hvohxy234",
+          "nickname": "RQXSLLY",
+          "skinNickname": "Solleise",
+          "points": 18,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "A",
+            "sword": "S"
+          },
+          "history": []
+        },
+        {
+          "id": "fbjpzq3af",
+          "nickname": "hkmhk",
+          "skinNickname": "LaGoat7112",
+          "points": 16,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "A",
+          "tierScores": {
+            "axe": "A",
+            "sword": "A"
+          },
+          "history": []
+        },
+        {
+          "id": "nl061d1bh",
+          "nickname": "Mintcl",
+          "skinNickname": "ClubOne_",
+          "points": 12,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "B",
+          "tierScores": {
+            "axe": "B",
+            "sword": "B"
+          },
+          "history": []
+        },
+        {
+          "id": "lozncbrq5",
+          "nickname": "xomyak",
+          "skinNickname": "xomyak",
+          "points": 4,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "D",
+          "tierScores": {
+            "axe": "D",
+            "sword": "D"
+          },
+          "history": []
+        },
+        {
+          "id": "wvssdo3br",
+          "nickname": "Richard_101",
+          "skinNickname": "clubone",
+          "points": 16,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "A",
+          "tierScores": {
+            "axe": "A",
+            "sword": "A"
+          },
+          "history": []
+        },
+        {
+          "id": "xspenwghl",
+          "nickname": "www",
+          "skinNickname": "www",
+          "points": 18,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "A",
+            "sword": "S"
+          },
+          "history": []
+        }
+      ]
+    },
+    {
+      "id": "yklzpwhfr",
+      "name": "Spring 2025",
+      "date": "2025-04-06",
+      "data": [
+        {
+          "id": "b23nz3hj7",
+          "nickname": "ClubOne_",
+          "skinNickname": "ClubOne_",
+          "points": 18,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "S",
+            "sword": "A"
+          },
+          "history": [
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1011,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 997,
+              "position": 0
+            }
+          ],
+          "eloScores": {
+            "sword": 1000
+          }
+        },
+        {
+          "id": "hvohxy234",
+          "nickname": "RQXSLLY",
+          "skinNickname": "Solleise",
+          "points": 18,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "A",
+            "sword": "S"
+          },
+          "history": []
+        },
+        {
+          "id": "fbjpzq3af",
+          "nickname": "hkmhk",
+          "skinNickname": "LaGoat7112",
+          "points": 16,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "A",
+          "tierScores": {
+            "axe": "A",
+            "sword": "A"
+          },
+          "history": []
+        },
+        {
+          "id": "nl061d1bh",
+          "nickname": "Mintcl",
+          "skinNickname": "ClubOne_",
+          "points": 12,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "B",
+          "tierScores": {
+            "axe": "B",
+            "sword": "B"
+          },
+          "history": []
+        },
+        {
+          "id": "lozncbrq5",
+          "nickname": "xomyak",
+          "skinNickname": "xomyak",
+          "points": 4,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "D",
+          "tierScores": {
+            "axe": "D",
+            "sword": "D"
+          },
+          "history": []
+        },
+        {
+          "id": "wvssdo3br",
+          "nickname": "Richard_101",
+          "skinNickname": "clubone",
+          "points": 16,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "A",
+          "tierScores": {
+            "axe": "A",
+            "sword": "A"
+          },
+          "history": []
+        },
+        {
+          "id": "xspenwghl",
+          "nickname": "www",
+          "skinNickname": "www",
+          "points": 16,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "A",
+            "sword": "A"
+          },
+          "history": []
+        }
+      ]
+    },
+    {
+      "id": "s2x5ycx6a",
+      "name": "Winter 2025",
+      "date": "2025-01-06",
+      "data": [
+        {
+          "id": "b23nz3hj7",
+          "nickname": "ClubOne_",
+          "skinNickname": "ClubOne_",
+          "points": 16,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "A",
+          "tierScores": {
+            "axe": "A",
+            "sword": "A"
+          },
+          "history": [
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1011,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 997,
+              "position": 0
+            }
+          ],
+          "eloScores": {
+            "sword": 1000
+          }
+        },
+        {
+          "id": "hvohxy234",
+          "nickname": "RQXSLLY",
+          "skinNickname": "Solleise",
+          "points": 16,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "A",
+          "tierScores": {
+            "axe": "A",
+            "sword": "A"
+          },
+          "history": []
+        },
+        {
+          "id": "fbjpzq3af",
+          "nickname": "hkmhk",
+          "skinNickname": "LaGoat7112",
+          "points": 20,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "S",
+            "sword": "S"
+          },
+          "history": []
+        },
+        {
+          "id": "nl061d1bh",
+          "nickname": "Mintcl",
+          "skinNickname": "ClubOne_",
+          "points": 12,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "B",
+          "tierScores": {
+            "axe": "B",
+            "sword": "B"
+          },
+          "history": []
+        },
+        {
+          "id": "lozncbrq5",
+          "nickname": "xomyak",
+          "skinNickname": "xomyak",
+          "points": 4,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "D",
+          "tierScores": {
+            "axe": "D",
+            "sword": "D"
+          },
+          "history": []
+        },
+        {
+          "id": "wvssdo3br",
+          "nickname": "Richard_101",
+          "skinNickname": "clubone",
+          "points": 20,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "S",
+            "sword": "S"
+          },
+          "history": []
+        }
+      ]
+    },
+    {
+      "id": "kza29hfjn",
+      "name": "Spring 2026",
+      "date": "2026-04-06",
+      "data": [
+        {
+          "id": "b23nz3hj7",
+          "nickname": "ClubOne_",
+          "skinNickname": "ClubOne_",
+          "points": 20,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "S",
+            "sword": "S"
+          },
+          "history": [
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1011,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 997,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 20,
+              "elo": 1000,
+              "position": 0
+            }
+          ],
+          "eloScores": {
+            "sword": 1317
+          }
+        },
+        {
+          "id": "hvohxy234",
+          "nickname": "RQXSLLY",
+          "skinNickname": "Solleise",
+          "points": 18,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "S",
+          "tierScores": {
+            "axe": "S",
+            "sword": "A"
+          },
+          "history": [
+            {
+              "date": "2026-04-06",
+              "points": 18,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 18,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 18,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 18,
+              "elo": 1000,
+              "position": 0
+            }
+          ],
+          "eloScores": {
+            "sword": 1104
+          }
+        },
+        {
+          "id": "fbjpzq3af",
+          "nickname": "hkmhk",
+          "skinNickname": "LaGoat7112",
+          "points": 14,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "A",
+          "tierScores": {
+            "axe": "A",
+            "sword": "B"
+          },
+          "history": [
+            {
+              "date": "2026-04-06",
+              "points": 14,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 14,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 14,
+              "elo": 1000,
+              "position": 0
+            }
+          ],
+          "eloScores": {
+            "sword": 688
+          }
+        },
+        {
+          "id": "nl061d1bh",
+          "nickname": "Mintcl",
+          "skinNickname": "ClubOne_",
+          "points": 12,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "B",
+          "tierScores": {
+            "axe": "B",
+            "sword": "B"
+          },
+          "history": []
+        },
+        {
+          "id": "lozncbrq5",
+          "nickname": "xomyak",
+          "skinNickname": "xomyak",
+          "points": 4,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "D",
+          "tierScores": {
+            "axe": "D",
+            "sword": "D"
+          },
+          "history": []
+        },
+        {
+          "id": "4pb1y3uk4",
+          "nickname": "Nekaa_",
+          "skinNickname": "Nekaa_",
+          "points": 14,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "B",
+          "tierScores": {
+            "axe": "A",
+            "sword": "B"
+          },
+          "history": [
+            {
+              "date": "2026-04-06",
+              "points": 14,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 14,
+              "elo": 1000,
+              "position": 0
+            },
+            {
+              "date": "2026-04-06",
+              "points": 14,
+              "elo": 1000,
+              "position": 0
+            }
+          ],
+          "eloScores": {
+            "sword": 891
+          }
+        },
+        {
+          "id": "1bqm5d1vf",
+          "nickname": "Richard_101",
+          "skinNickname": "ClubOne",
+          "points": 14,
+          "tournamentPoints": 0,
+          "elo": 1000,
+          "badge": "",
+          "tier": "A",
+          "tierScores": {
+            "axe": "A",
+            "sword": "B"
+          },
+          "history": []
+        }
+      ]
+    }
+  ],
+  "matches": [
+    {
+      "id": "tyegkkkj5",
+      "date": "2026-04-25T11:04:17.894Z",
+      "tierId": "sword",
+      "player1Id": "b23nz3hj7",
+      "player2Id": "fbjpzq3af",
+      "winnerId": "b23nz3hj7",
+      "eloChange1": 81,
+      "eloChange2": -81,
+      "score1": 10,
+      "score2": 0
+    },
+    {
+      "id": "q1ibggcyh",
+      "date": "2026-04-25T11:01:57.720Z",
+      "tierId": "axe",
+      "player1Id": "b23nz3hj7",
+      "player2Id": "4pb1y3uk4",
+      "winnerId": "b23nz3hj7",
+      "eloChange1": 73,
+      "eloChange2": -73,
+      "score1": 10,
+      "score2": 1
+    },
+    {
+      "id": "74eiqq6eo",
+      "date": "2026-04-25T11:01:48.941Z",
+      "tierId": "axe",
+      "player1Id": "b23nz3hj7",
+      "player2Id": "hvohxy234",
+      "winnerId": "b23nz3hj7",
+      "eloChange1": 145,
+      "eloChange2": -145,
+      "score1": 10,
+      "score2": 1
+    },
+    {
+      "id": "udinvo560",
+      "date": "2026-04-25T11:01:37.947Z",
+      "tierId": "axe",
+      "player1Id": "hvohxy234",
+      "player2Id": "b23nz3hj7",
+      "winnerId": "hvohxy234",
+      "eloChange1": 26,
+      "eloChange2": -26,
+      "score1": 10,
+      "score2": 7
+    },
+    {
+      "id": "uffzd6wmw",
+      "date": "2026-04-25T10:59:54.714Z",
+      "tierId": "sword",
+      "player1Id": "b23nz3hj7",
+      "player2Id": "hvohxy234",
+      "winnerId": "b23nz3hj7",
+      "eloChange1": -4,
+      "eloChange2": 4,
+      "score1": 10,
+      "score2": 3
+    },
+    {
+      "id": "omx67sonx",
+      "date": "2026-04-25T10:59:43.073Z",
+      "tierId": "sword",
+      "player1Id": "hvohxy234",
+      "player2Id": "4pb1y3uk4",
+      "winnerId": "hvohxy234",
+      "eloChange1": -37,
+      "eloChange2": 37,
+      "score1": 10,
+      "score2": 9
+    },
+    {
+      "id": "phba9iyn3",
+      "date": "2026-04-25T10:59:22.185Z",
+      "tierId": "sword",
+      "player1Id": "b23nz3hj7",
+      "player2Id": "hvohxy234",
+      "winnerId": "b23nz3hj7",
+      "eloChange1": 25,
+      "eloChange2": -25,
+      "score1": 10,
+      "score2": 3
+    },
+    {
+      "id": "5xeei2t8o",
+      "date": "2026-04-25T10:59:13.868Z",
+      "tierId": "sword",
+      "player1Id": "b23nz3hj7",
+      "player2Id": "hvohxy234",
+      "winnerId": "b23nz3hj7",
+      "eloChange1": 139,
+      "eloChange2": -139,
+      "score1": 10,
+      "score2": 3
+    },
+    {
+      "id": "gs148jbpm",
+      "date": "2026-04-25T10:59:04.260Z",
+      "tierId": "sword",
+      "player1Id": "hvohxy234",
+      "player2Id": "4pb1y3uk4",
+      "winnerId": "hvohxy234",
+      "eloChange1": 65,
+      "eloChange2": -65,
+      "score1": 10,
+      "score2": 1
+    },
+    {
+      "id": "5628z4qej",
+      "date": "2026-04-25T10:58:49.393Z",
+      "tierId": "sword",
+      "player1Id": "hvohxy234",
+      "player2Id": "fbjpzq3af",
+      "winnerId": "hvohxy234",
+      "eloChange1": 77,
+      "eloChange2": -77,
+      "score1": 10,
+      "score2": 5
+    },
+    {
+      "id": "7sklmb8q4",
+      "date": "2026-04-25T10:58:32.126Z",
+      "tierId": "sword",
+      "player1Id": "fbjpzq3af",
+      "player2Id": "4pb1y3uk4",
+      "winnerId": "fbjpzq3af",
+      "eloChange1": 64,
+      "eloChange2": -64,
+      "score1": 10,
+      "score2": 4
+    }
+  ]
+}
